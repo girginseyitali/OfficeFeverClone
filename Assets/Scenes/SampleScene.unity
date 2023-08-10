@@ -240,7 +240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651919573}
   m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
-  m_LocalPosition: {x: 1.97, y: 8, z: -13.65}
+  m_LocalPosition: {x: 1.34, y: 8, z: -13.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -544,7 +544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
-  m_LocalPosition: {x: 1.97, y: 8, z: -13.65}
+  m_LocalPosition: {x: 1.34, y: 8, z: -13.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -761,6 +761,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1820570557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7167313778627074618, guid: e6fa5f1a56cf7ff409bce6c66ca46c64, type: 3}
+  m_PrefabInstance: {fileID: 1141216646224919875}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1981720126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,7 +1135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7511081983517393024, guid: e6fa5f1a56cf7ff409bce6c66ca46c64, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.97
+      value: 1.34
       objectReference: {fileID: 0}
     - target: {fileID: 7511081983517393024, guid: e6fa5f1a56cf7ff409bce6c66ca46c64, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2684,6 +2689,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7511081983517393024, guid: e6fa5f1a56cf7ff409bce6c66ca46c64, type: 3}
   m_PrefabInstance: {fileID: 1141216646224919875}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7488029578860674505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820570557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 387e22a167a3c054392623e06a8498a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!4 &7493546094768827470
 Transform:
   m_ObjectHideFlags: 0

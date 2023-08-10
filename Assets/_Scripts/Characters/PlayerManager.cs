@@ -11,7 +11,7 @@ public class PlayerManager : MonoBehaviour
     
     private Vector3 direction;
     private Camera cam;
-    private Animator playerAnimator;
+    private PlayerAnimationController playerAnimationController;
     [SerializeField] private List<Transform> papers = new List<Transform>();
     [SerializeField] private Transform paperPlace;
     
@@ -20,7 +20,7 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
-        playerAnimator = GetComponent<Animator>();
+        playerAnimationController = GetComponent<PlayerAnimationController>();
         papers.Add(paperPlace);
     }
 
@@ -46,12 +46,12 @@ public class PlayerManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            playerAnimator.SetBool("isRun", true);
+            playerAnimationController.animator.SetBool("isRun", true);
         }
 
         if (Input.GetMouseButtonUp(0))
         {
-            playerAnimator.SetBool("isRun", false);
+            playerAnimationController.animator.SetBool("isRun", false);
         }
 
 
@@ -86,7 +86,7 @@ public class PlayerManager : MonoBehaviour
                     if (hit.collider.transform.parent.GetComponent<Printer>().yAxis > 0f)
                         hit.collider.transform.parent.GetComponent<Printer>().yAxis -= 0.17f;
 
-                    playerAnimator.SetBool("isCarry", true);
+                    playerAnimationController.animator.SetBool("isCarry", true);
                     
                 }
             }
