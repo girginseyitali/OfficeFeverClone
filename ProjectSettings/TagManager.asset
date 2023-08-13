@@ -7,6 +7,7 @@ TagManager:
   - Table
   - PaperPlace
   - Dollar
+  - BuyArea
   layers:
   - Default
   - TransparentFX

@@ -149,4 +149,17 @@ public class PlayerManager : MonoBehaviour
             OnMoneyCollected?.Invoke(this, EventArgs.Empty);
         }
     }
+
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag(("BuyArea")))
+        {
+            if (PlayerPrefs.GetInt("Dollar") > 0 && !other.GetComponent<BuyArea>().isUnlocked)
+            {
+                GameManager.Instance.Dollar -= 5;
+                PlayerPrefs.SetInt("Dollar", GameManager.Instance.Dollar);
+                other.transform.GetComponent<BuyArea>().UpdateMoneyToUnlockText(GameManager.Instance.Dollar);
+            }
+        }
+    }
 }
